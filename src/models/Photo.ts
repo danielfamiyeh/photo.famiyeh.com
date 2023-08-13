@@ -12,6 +12,9 @@ export default class Photo {
 
   @prop()
   public photoshoot?: string;
+
+  @prop()
+  public takenAt?: string;
 }
 
 export const PhotoModel = mongoose.models.Photo ?? getModelForClass(Photo);
